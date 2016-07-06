@@ -1984,7 +1984,7 @@
             "tickboxid": 11,
             "tdstarcls": true,
             "subject": "Baskar Ram",
-            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+            "text": "Lorem Ipsum is simply dummy    text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
             "labelname": "Work",
