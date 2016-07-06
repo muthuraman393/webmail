@@ -1,4 +1,4 @@
-<div class="topsec" ng-class="{'mintopsec':boolChangeClass}">
+<div class="topsec" ng-class="{'mintopsec':boolChangeClass}"  ngif="boolChangeClass">
     <p ng-class="{'mintopheader':boolChangeClass,'mintopsecp':boolChangeClass}">Mailbox</p>
     <div class="searchbut" ng-class="{'minsearchbut':boolChangeClass}">
         <div class="container-1">
@@ -42,7 +42,9 @@
         </div>
     </div>
 </div>
-<div class="tablelist" ng-style="style()" resize scroll ng-class="{min:boolChangeClass}">
+<div style="clear: both;"></div>
+<div ng-hide="false" class="spinloader"></div>
+<div class="tablelist" ng-style="style()" resize scroll ng-class="{min:boolChangeClass}" ng-hide="true">
     <table>
         <tbody
             <tr ng-repeat="item in list2  | filter:query" >
