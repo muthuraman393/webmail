@@ -24,7 +24,7 @@ app.directive('resize', function($window) {
             };
             scope.mailcontentbarstyle = function() {
                 return {
-                    'height': (newValue.h / 2.7) + 'px'
+                    'height': (newValue.h / 4) + 'px'
 
                 };
             };
@@ -34,7 +34,9 @@ app.directive('resize', function($window) {
         }, true);
 
         w.bind('resize', function() {
-            scope.$apply();
+            	if(!scope.$$phase) {
+           		scope.$digest();
+		}
         });
     }
 })
@@ -68,19 +70,25 @@ app.directive('resize', function($window) {
 app.directive("scroll", function ($window) {
     return function(scope, element, attrs) {
         element.bind("scroll", function() {
-             if (element.scrollTop() >= 100) {
+
+              if (element.scrollTop() >= 200) {
                  scope.boolChangeClass = true;
-                 console.log('Scrolled below header.');
-				scope.style = function() {
-					return {
-						'height': (scope.windowHeight - 60) + 'px'
-					};
+                 console.log('Scrolled below header.s#s');
+		 scope.style = function() {
+			return {
+				'height': (scope.windowHeight - 60) + 'px'
+			};
                 };
+
              } else {
                  scope.boolChangeClass = false;
-                 console.log('Header is in view.');
+                 console.log('Header is in view.dfd#');
+                 //alert('df');
              }
-            scope.$apply();
+		if(!scope.$$phase) {
+                  scope.$digest();
+	        }
+           
         });
     };
 });
@@ -104,5 +112,28 @@ app.directive('stopEvent', function() {
                 e.stopPropagation();
             });
         }
+    };
+});
+
+app.directive('mailTemplate', function() {
+
+    return {
+    restrict: 'E',
+    scope: {
+      customerInfo: '=info',list : '=datainfo'
+    },
+    templateUrl:'assets/partials/mailreadtemplate.html',
+    link: function (scope, element, attrs) {
+      scope.visibleinfo = attrs.visibleinfo;
+
+    scope.innermailclose = function(index) {
+        //alert(index+'close');console.log(scope.list[index]);
+
+        scope.list[index].visibleinnerreadmail = 'close';
+
+    };
+
+
+      }
     };
 });
