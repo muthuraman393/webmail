@@ -6,9 +6,12 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
+
         }, {
             "tickboxid": 2,
             "tdstarcls": false,
@@ -16,9 +19,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Family",
+            "labelname": ["Family"],
             "labelcolor": "btn-orangecolor",
-            "avatar": false
+            "avatar": false,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 3,
             "tdstarcls": true,
@@ -26,9 +31,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 4,
             "tdstarcls": false,
@@ -36,9 +43,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "FAmily",
+            "labelname": ["Family"],
             "labelcolor": "btn-orangecolor",
-            "avatar": false
+            "avatar": false,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 5,
             "tdstarcls": true,
@@ -46,9 +55,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["Draft"],
+            "Replied For":{}
         }, {
             "tickboxid": 6,
             "tdstarcls": true,
@@ -56,9 +67,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "Family",
+            "labelname": ["Family"],
             "labelcolor": "btn-orangecolor",
-            "avatar": false
+            "avatar": false,
+            "Flag" :["sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 7,
             "tdstarcls": false,
@@ -66,9 +79,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["Draft"],
+            "Replied For":{}
         }, {
             "tickboxid": 8,
             "tdstarcls": true,
@@ -76,9 +91,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["Draft"],
+            "Replied For":{}
         }, {
             "tickboxid": 9,
             "tdstarcls": false,
@@ -86,9 +103,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["trash"],
+            "Replied For":{}
         }, {
             "tickboxid": 10,
             "tdstarcls": true,
@@ -96,9 +115,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Family",
+            "labelname": ["Family"],
             "labelcolor": "btn-orangecolor",
-            "avatar": false
+            "avatar": false,
+            "Flag" :["trash"],
+            "Replied For":{}
         }, {
             "tickboxid": 11,
             "tdstarcls": true,
@@ -106,9 +127,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["trash"],
+            "Replied For":{}
         }, {
             "tickboxid": 12,
             "tdstarcls": true,
@@ -116,9 +139,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 13,
             "tdstarcls": false,
@@ -126,9 +151,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": false
+            "avatar": false,
+            "Flag" :["sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 14,
             "tdstarcls": true,
@@ -136,9 +163,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 15,
             "tdstarcls": false,
@@ -146,9 +175,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "Family",
+            "labelname": ["Family"],
             "labelcolor": "btn-orangecolor",
-            "avatar": false
+            "avatar": false,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 16,
             "tdstarcls": false,
@@ -156,9 +187,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": true,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }, {
             "tickboxid": 17,
             "tdstarcls": true,
@@ -166,9 +199,11 @@
             "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
             "attach": false,
             "time": "3 minutes ago",
-            "labelname": "Work",
+            "labelname": ["Work"],
             "labelcolor": "btn-redcolor",
-            "avatar": true
+            "avatar": true,
+            "Flag" :["inbox","sent"],
+            "Replied For":{}
         }
     
 ]
