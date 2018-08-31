@@ -1,10 +1,14 @@
+
 /*Prototype pattern*/
 console.log('Welcome to Javascript Case Studies');
 function classA(name,age,gender){
  this.name = name;
  this.age = age;
  this.gender = gender;
-
+ this.logging = function(){
+   
+    console.log(this.name,this.age,this.gender);
+ }
 
 }
 
@@ -30,9 +34,9 @@ var human1 = {name:'alien', age:'unknown',Dateofbirth:'Infinity'}; // 2nd type o
 
 var person = Object.create(classA.prototype); // 3rd type of object creation  Object.create(consturctorname.prototype)
 
- Object.defineProperty(person,'name',{value:'Sabari',enumerable:true,writtable:true,configurable:true});
- Object.defineProperty(person,'age',{value:'39'})
- Object.defineProperty(person,'Dateofbirth',{value:'10-02-2014'})
+ //Object.defineProperty(person,'name',{value:'Sabari',enumerable:true,writtable:true,configurable:true});
+ //Object.defineProperty(person,'age',{value:'39',enumerable:true,writtable:true,configurable:true})
+ //Object.defineProperty(person,'Dateofbirth',{value:'10-02-2014',enumerable:true,writtable:true,configurable:true})
 
 
 
@@ -42,19 +46,27 @@ Object.defineProperty(Indian,'relgion',{value:'Hindu',enumerable:true,writtable:
 //DOB inherited from Praent 
 
 human.gender= 'female';
-person.height= '6ft';
+
 console.log('*Human*',human);
 console.log('*Human1*',human1);
 console.log('*person*', person);
+person.height= '6ft';
 console.log('*Indian*',Indian,'-','Indian.Dateofbirth',Indian.Dateofbirth);
 console.log('-----------------------------------------------------------------------');
 //End of prototype pattern
 
 
 
+//prototypical inheritance
+function smallclass(name,age,gender,aadhar){
+    classA.call(this,name,age,gender)
+    this.aadhar = aadhar;
 
+}
+smallclass.prototype = Object.create(classA.prototype);
+var inheritedcls = new smallclass('ajay','24','male','86565656555');
 
-
+console.log('inheritedcls', inheritedcls)
 /**
  * Rough Section
  */
@@ -93,3 +105,4 @@ var accessvalues = function(){
 
 console.log('*beget*',beget({name:'asdas',asd:'sadas',accessvalues:accessvalues}));
 console.log('*asasaw*',asasaw);
+
