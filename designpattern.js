@@ -106,3 +106,108 @@ var accessvalues = function(){
 console.log('*beget*',beget({name:'asdas',asd:'sadas',accessvalues:accessvalues}));
 console.log('*asasaw*',asasaw);
 
+/*SingleTOn Pattern Start */
+var singleTonexample = function(){
+    var instance; // private variable
+    function init(name,username){ // private method
+
+        function composedconst(name,username){
+            this.name = name;
+            this.username = username;
+        }
+        composedconst.prototype.fullname = (function(){
+                return this.name+"--"+this.username;
+        });
+        var composedobj = new composedconst(name,username);
+        return composedobj;
+    }
+
+    return {
+
+        getinstance:function(sname,uname){
+            if(!instance){
+                instance = init(sname,uname);
+            }
+            return instance;
+        }
+    }
+
+}();
+var sinlge1 = singleTonexample.getinstance('agarwal','Soniya selavaragavan');
+var sinlge2 =singleTonexample.getinstance('shallini','Ajith Kumar');
+
+console.log(sinlge1);
+console.log(sinlge2);
+/*SingleTOn Pattern End */
+
+
+/*MOdule Pattern */
+var myModule = (function() {
+    'use strict';
+ 
+    var _privateProperty = 'Hello World';
+     var publicproperty ='asd asd ';
+    function _privateMethod() {
+        console.log(_privateProperty);
+    }
+    function publicMethod() {
+        _privateMethod();
+    }
+    return {
+        publicMethod: publicMethod,
+        publicproperty:publicproperty
+    };
+}());
+  
+myModule.publicMethod();                    // outputs 'Hello World'   
+console.log(myModule.publicproperty);     // is undefined protected by the module closure
+//myModule._privateMethod();                  // is TypeError protected by the module closure
+
+
+const url ='https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc';
+const url2 ='https://api.github.com/search/users?q=tetris+language:assembly&sort=stars&order=desc';
+
+/*var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        console.log(myObj);
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();*/
+
+function get(url){ 
+return new Promise(function(resolve,reject) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function(){
+        if(xmlhttp.status == 200)
+            resolve(xmlhttp.response);
+        else
+            reject(Error(xmlhttp.statusText));
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+  });
+
+}
+
+
+  get(url).then(function(response){
+    
+      return JSON.parse(response);
+     
+    }).then(function(response){
+        
+        console.log('updated',response);
+        return get(url2);
+      }).then(function(newrespoonse){
+        return JSON.parse(newrespoonse);
+      }).then(function(newrespoonse){
+        console.log('updated2',newrespoonse);
+      })
+      .catch(function(error){
+        console.log('value error occureed')
+    });
+
+    /*Promise end */
